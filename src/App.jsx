@@ -5,6 +5,7 @@ function App() {
 
   return (
     <>
+      <div id='background-box'></div>
      <Card/>
     </>
   )
