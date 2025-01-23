@@ -6,7 +6,7 @@ import data from '../data/data.json'
 
 export default function Accordion() {
 
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState(0)
   
    function hundleAccordion(index) {
      selected === index ? setSelected(null) : setSelected(index)
