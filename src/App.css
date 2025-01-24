@@ -67,14 +67,12 @@ button {
   display: flex;
 }
 
-h2 {
+.purple {
   width: 200px;
   color: var(--Dark-purple);
 }
 
-h2:hover {
-  color: #9431cc;
-}
+
 
 .accordion:after {
   display: block;
@@ -93,6 +91,10 @@ h2:hover {
 .accordion-content.active {
   display: inline-block;
   padding-bottom: 1.4em;
+}
+
+.purple.active {
+  color: #9431cc;
 }
 
 .content-txt {
@@ -124,7 +126,7 @@ h2:hover {
     margin-right: 1.3em;
   }
 
-  h2 {
+  .purple {
     width: 400px;
     color: var(--Dark-purple);
   }

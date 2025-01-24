@@ -18,7 +18,7 @@ export default function Accordion() {
             data.map((dataItem, index)=> {
               return (
                  <div key={index} className='accordion'>
-                    <div className='row'><h2>{dataItem.title}</h2>  <button onClick={() => hundleAccordion(index)}>{selected === index ? <img src={img1} alt=''/> : <img src={img2} alt=''/>}</button> </div>
+                    <div className='row'><h2  className={selected === index ? 'purple active': 'purple'}>{dataItem.title}</h2>  <button onClick={() => hundleAccordion(index)}>{selected === index ? <img src={img1} alt=''/> : <img src={img2} alt=''/>}</button> </div>
                     <div className={selected === index ? 'accordion-content active': 'accordion-content'}>
                      <p className='content-txt'>{dataItem.body}</p>
                     </div>
